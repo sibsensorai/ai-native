@@ -1,0 +1,4 @@
+name: sibsensor-pilot
+version: "0.1.0"
+description: "Пилотные навыки компании «Сибсенсор»: контроль поручений по протоколам совещаний."
+platform_release: "2026.09.11"

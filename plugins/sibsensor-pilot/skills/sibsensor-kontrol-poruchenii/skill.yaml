@@ -1,0 +1,22 @@
+schema: 1
+name: sibsensor-kontrol-poruchenii
+version: 0.1.0
+title: "Контроль поручений по протоколам совещаний"
+description: "Контроль поручений по протоколам совещаний компании «Сибсенсор». Используй, когда после совещания нужно из записи или расшифровки сделать протокол и список поручений со сроками и ответственными, завести их в Кайтен, ежедневно контролировать сроки и готовить сводку исполнительской дисциплины к следующему совещанию."
+compatible_agents:
+  - claude
+  - codex
+  - cursor
+  - opencode
+  - openclaw
+  - hermes
+  - zcode
+requires:
+  mcp: []
+  permissions:
+    filesystem: read
+resources:
+  skill: SKILL.md
+  references: true
+  scripts: false
+  assets: false

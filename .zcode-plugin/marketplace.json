@@ -14,6 +14,14 @@
       "version": "0.3.0",
       "category": "AI",
       "platformRelease": "2026.09.11"
+    },
+    {
+      "name": "sibsensor-pilot",
+      "source": "./plugins/sibsensor-pilot",
+      "description": "Пилотные навыки компании «Сибсенсор»: контроль поручений по протоколам совещаний.",
+      "version": "0.1.0",
+      "category": "AI",
+      "platformRelease": "2026.09.11"
     }
   ]
 }

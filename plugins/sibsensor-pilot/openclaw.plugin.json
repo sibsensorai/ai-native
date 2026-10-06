@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "name": "sibsensor-pilot",
+  "version": "0.1.0",
+  "description": "Пилотные навыки компании «Сибсенсор»: контроль поручений по протоколам совещаний.",
+  "skills": [
+    "./skills"
+  ],
+  "metadata": {
+    "openclaw": {
+      "category": "AI"
+    },
+    "platformRelease": "2026.09.11"
+  }
+}

@@ -18,6 +18,18 @@
       "category": "AI"
     },
     {
+      "name": "sibsensor-pilot",
+      "source": {
+        "source": "local",
+        "path": "./plugins/sibsensor-pilot"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "AI"
+    },
+    {
       "name": "gateway-mcp",
       "source": {
         "source": "local",

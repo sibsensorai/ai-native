@@ -18,6 +18,16 @@
         "sequential-thinking",
         "document-templates"
       ]
+    },
+    {
+      "name": "sibsensor-pilot",
+      "version": "0.1.0",
+      "displayName": "Сибсенсор — пилот",
+      "category": "AI",
+      "description": "Пилотные навыки компании «Сибсенсор»: контроль поручений по протоколам совещаний.",
+      "skills": [
+        "sibsensor-kontrol-poruchenii"
+      ]
     }
   ]
 }

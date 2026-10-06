@@ -1,0 +1,33 @@
+{
+  "name": "sibsensor-pilot",
+  "version": "0.1.0",
+  "description": "Пилотные навыки компании «Сибсенсор»: контроль поручений по протоколам совещаний.",
+  "author": {
+    "name": "coMind",
+    "email": "team@comind.space",
+    "url": "https://comind.space"
+  },
+  "keywords": [
+    "agents",
+    "skills",
+    "ai-native",
+    "ai"
+  ],
+  "skills": "./skills/",
+  "metadata": {
+    "platformRelease": "2026.09.11"
+  },
+  "interface": {
+    "displayName": "Сибсенсор — пилот",
+    "shortDescription": "Пилотные навыки компании «Сибсенсор»: контроль поручений по протоколам совещаний.",
+    "longDescription": "Пилотные навыки компании «Сибсенсор»: контроль поручений по протоколам совещаний.",
+    "developerName": "coMind",
+    "category": "AI",
+    "capabilities": [
+      "Skills"
+    ],
+    "defaultPrompt": [
+      "Use Сибсенсор — пилот for this work."
+    ]
+  }
+}
