@@ -9,6 +9,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from agent_platform.cursor_distribution import build_cursor_distribution
+from agent_platform.paths import GATEWAY_MCP_PUBLIC_URL
 from agent_platform.plugins.gateway import write_gateway_plugin
 
 
@@ -97,7 +98,7 @@ class CursorDistributionTests(unittest.TestCase):
             self.assertNotIn("configuration", cursor_manifest)
             self.assertEqual(
                 cursor_mcp["mcpServers"]["gateway"]["url"],
-                "https://gateway.example.com/mcp",
+                GATEWAY_MCP_PUBLIC_URL,
             )
             self.assertNotIn("headers", cursor_mcp["mcpServers"]["gateway"])
 
