@@ -1,0 +1,14 @@
+# Кто утверждает, что попадёт в общий набор скиллов «Сибсенсор».
+# Изменения в этих папках требуют одобрения кого-то из владельцев (ниже).
+# GitHub-логины. Шелембу добавим, когда будет его логин: заменить ВТОРОЙ логин.
+
+/skills/           @sibsensorai
+/agent-platform/   @sibsensorai
+/plugins/          @sibsensorai
+/.github/          @sibsensorai
+
+# Пример с двумя утверждающими (раскомментировать и подставить логин Шелембы):
+# /skills/           @sibsensorai @ЛОГИН-ШЕЛЕМБЫ
+# /agent-platform/   @sibsensorai @ЛОГИН-ШЕЛЕМБЫ
+# /plugins/          @sibsensorai @ЛОГИН-ШЕЛЕМБЫ
+# /.github/          @sibsensorai @ЛОГИН-ШЕЛЕМБЫ
