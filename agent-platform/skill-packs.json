@@ -28,6 +28,17 @@
       "skills": [
         "sibsensor-kontrol-poruchenii"
       ]
+    },
+    {
+      "name": "sibsensor-skill-agents",
+      "version": "0.1.0",
+      "displayName": "Сибсенсор — агенты управления скиллами",
+      "category": "AI",
+      "description": "Главный агент и агенты-владельцы скиллов по отделам: маршрутизация, подготовка и проверка навыков. Финальное одобрение — за человеком.",
+      "skills": [
+        "skill-director",
+        "it-owner"
+      ]
     }
   ]
 }

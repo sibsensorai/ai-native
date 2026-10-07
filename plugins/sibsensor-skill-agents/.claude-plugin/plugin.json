@@ -1,0 +1,13 @@
+{
+  "name": "sibsensor-skill-agents",
+  "version": "0.1.0",
+  "description": "Главный агент и агенты-владельцы скиллов по отделам: маршрутизация, подготовка и проверка навыков. Финальное одобрение — за человеком.",
+  "author": {
+    "name": "coMind",
+    "email": "team@comind.space",
+    "url": "https://comind.space"
+  },
+  "metadata": {
+    "platformRelease": "2026.09.11"
+  }
+}

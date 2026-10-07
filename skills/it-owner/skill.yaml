@@ -1,0 +1,22 @@
+schema: 1
+name: it-owner
+version: 0.1.0
+title: "Агент-владелец скиллов отдела IT"
+description: "Агент-владелец скиллов отдела IT компании «Сибсенсор»: собирает потребности IT, готовит и обновляет навыки с префиксом it-, проверяет их и отдаёт главному агенту и человеку на одобрение. Сам в общий набор не публикует."
+compatible_agents:
+  - claude
+  - codex
+  - cursor
+  - opencode
+  - openclaw
+  - hermes
+  - zcode
+requires:
+  mcp: []
+  permissions:
+    filesystem: read
+resources:
+  skill: SKILL.md
+  references: false
+  scripts: false
+  assets: false

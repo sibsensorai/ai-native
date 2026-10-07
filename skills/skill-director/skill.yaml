@@ -1,0 +1,22 @@
+schema: 1
+name: skill-director
+version: 0.1.0
+title: "Главный агент управления скиллами"
+description: "Главный агент управления скиллами компании «Сибсенсор»: определяет отдел, передаёт подготовку агенту-владельцу отдела, проверяет результат и готовит к финальному одобрению человеком. Сам в общий набор не публикует."
+compatible_agents:
+  - claude
+  - codex
+  - cursor
+  - opencode
+  - openclaw
+  - hermes
+  - zcode
+requires:
+  mcp: []
+  permissions:
+    filesystem: read
+resources:
+  skill: SKILL.md
+  references: false
+  scripts: false
+  assets: false
