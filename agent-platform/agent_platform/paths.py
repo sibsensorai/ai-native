@@ -12,8 +12,10 @@ GENERATED_PATHS = [
     Path(".cursor-plugin"),
     Path(".zcode-plugin"),
 ]
-GATEWAY_MCP_PUBLIC_URL = os.environ.get("GATEWAY_MCP_PUBLIC_URL", "https://gateway.example.com/mcp")
-GATEWAY_MCP_LOGIN_URL = os.environ.get("GATEWAY_MCP_LOGIN_URL", "https://gateway.example.com/auth/yandex/login")
+# Публичный адрес ядра «Сибсенсор». Зашит в плагины, чтобы сотрудникам не нужно
+# было вводить его вручную. При переезде на свой домен — поменять здесь и republish.
+GATEWAY_MCP_PUBLIC_URL = os.environ.get("GATEWAY_MCP_PUBLIC_URL", "https://129-101-119-32.sslip.io/mcp")
+GATEWAY_MCP_LOGIN_URL = os.environ.get("GATEWAY_MCP_LOGIN_URL", "https://129-101-119-32.sslip.io/auth/yandex/login")
 
 
 def repo_path(path: str | Path) -> Path:

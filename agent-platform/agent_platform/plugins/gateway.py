@@ -41,11 +41,13 @@ def cursor_gateway_mcp_config() -> dict[str, Any]:
 
 
 def claude_gateway_mcp_config() -> dict[str, Any]:
+    # Адрес ядра зашит напрямую (а не через user_config): в окне Claude Code нет
+    # поля для его ввода, поэтому сотрудники получают рабочий адрес сразу после установки.
     return {
         "mcpServers": {
             "gateway": {
                 "type": "http",
-                "url": "${user_config.gateway_mcp_url}",
+                "url": GATEWAY_MCP_PUBLIC_URL,
                 "timeout": 60000,
             }
         }
@@ -84,9 +86,9 @@ def write_gateway_plugin(plugin_root: Path, platform_release: str = "") -> None:
                 "gateway_mcp_url": {
                     "type": "string",
                     "title": "GatewayMCP URL",
-                    "description": f"Remote GatewayMCP HTTP endpoint. Production: {GATEWAY_MCP_PUBLIC_URL}",
+                    "description": f"Адрес ядра (уже задан по умолчанию, менять не нужно): {GATEWAY_MCP_PUBLIC_URL}",
                     "default": GATEWAY_MCP_PUBLIC_URL,
-                    "required": True,
+                    "required": False,
                 },
             },
         },

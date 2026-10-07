@@ -15,9 +15,9 @@
     "gateway_mcp_url": {
       "type": "string",
       "title": "GatewayMCP URL",
-      "description": "Remote GatewayMCP HTTP endpoint. Production: https://gateway.example.com/mcp",
-      "default": "https://gateway.example.com/mcp",
-      "required": true
+      "description": "Адрес ядра (уже задан по умолчанию, менять не нужно): https://129-101-119-32.sslip.io/mcp",
+      "default": "https://129-101-119-32.sslip.io/mcp",
+      "required": false
     }
   }
 }

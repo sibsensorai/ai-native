@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "gateway": {
-      "url": "https://gateway.example.com/mcp"
+      "url": "https://129-101-119-32.sslip.io/mcp"
     }
   }
 }

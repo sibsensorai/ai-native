@@ -2,7 +2,7 @@
   "mcpServers": {
     "gateway": {
       "type": "http",
-      "url": "${user_config.gateway_mcp_url}",
+      "url": "https://129-101-119-32.sslip.io/mcp",
       "timeout": 60000
     }
   }
