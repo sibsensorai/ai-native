@@ -30,6 +30,14 @@
       "version": "0.1.0",
       "category": "AI",
       "platformRelease": "2026.09.11"
+    },
+    {
+      "name": "sibsensor-it",
+      "source": "./plugins/sibsensor-it",
+      "description": "Навыки отдела IT компании «Сибсенсор»: диагностика сетевого принтера и другие ИТ-процедуры.",
+      "version": "0.1.0",
+      "category": "AI",
+      "platformRelease": "2026.09.11"
     }
   ]
 }

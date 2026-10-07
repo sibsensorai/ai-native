@@ -11,6 +11,7 @@ PACKS = {
     'ai-native-core': ['ai-native-core-starter-kit', 'ai-native-proposal', 'architect', 'smd-drawio', 'func-arch-drawio', 'eepc-drawio', 'editorial-style', 'sequential-thinking', 'document-templates'],
     'sibsensor-pilot': ['sibsensor-kontrol-poruchenii'],
     'sibsensor-skill-agents': ['skill-director', 'it-owner'],
+    'sibsensor-it': ['it-printer-diagnostika'],
 }
 
 

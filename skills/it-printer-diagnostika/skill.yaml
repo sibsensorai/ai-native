@@ -1,0 +1,22 @@
+schema: 1
+name: it-printer-diagnostika
+version: 0.1.0
+title: "Диагностика сетевого принтера (не печатает)"
+description: "Диагностика сетевого принтера компании «Сибсенсор», когда не печатает: локализовать причину (принтер, сеть или компьютер), восстановить печать или завести заявку в сервис."
+compatible_agents:
+  - claude
+  - codex
+  - cursor
+  - opencode
+  - openclaw
+  - hermes
+  - zcode
+requires:
+  mcp: []
+  permissions:
+    filesystem: read
+resources:
+  skill: SKILL.md
+  references: false
+  scripts: false
+  assets: false
