@@ -1,0 +1,29 @@
+{
+  "name": "sibsensor-it",
+  "displayName": "Сибсенсор — IT",
+  "version": "0.1.0",
+  "description": "Навыки отдела IT компании «Сибсенсор»: диагностика сетевого принтера и другие ИТ-процедуры.",
+  "author": {
+    "name": "coMind",
+    "email": "team@comind.space"
+  },
+  "homepage": "https://comind.space",
+  "repository": "https://github.com/comindspace/ai-native",
+  "license": "UNLICENSED",
+  "keywords": [
+    "agents",
+    "skills",
+    "ai-native",
+    "ai"
+  ],
+  "category": "ai",
+  "tags": [
+    "ai",
+    "skills",
+    "agent-skills"
+  ],
+  "skills": "./skills/",
+  "metadata": {
+    "platformRelease": "2026.09.11"
+  }
+}

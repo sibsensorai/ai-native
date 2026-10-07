@@ -1,0 +1,33 @@
+{
+  "name": "sibsensor-it",
+  "version": "0.1.0",
+  "description": "Навыки отдела IT компании «Сибсенсор»: диагностика сетевого принтера и другие ИТ-процедуры.",
+  "author": {
+    "name": "coMind",
+    "email": "team@comind.space",
+    "url": "https://comind.space"
+  },
+  "keywords": [
+    "agents",
+    "skills",
+    "ai-native",
+    "ai"
+  ],
+  "skills": "./skills/",
+  "metadata": {
+    "platformRelease": "2026.09.11"
+  },
+  "interface": {
+    "displayName": "Сибсенсор — IT",
+    "shortDescription": "Навыки отдела IT компании «Сибсенсор»: диагностика сетевого принтера и другие ИТ-процедуры.",
+    "longDescription": "Навыки отдела IT компании «Сибсенсор»: диагностика сетевого принтера и другие ИТ-процедуры.",
+    "developerName": "coMind",
+    "category": "AI",
+    "capabilities": [
+      "Skills"
+    ],
+    "defaultPrompt": [
+      "Use Сибсенсор — IT for this work."
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "name": "sibsensor-it",
+  "version": "0.1.0",
+  "description": "Навыки отдела IT компании «Сибсенсор»: диагностика сетевого принтера и другие ИТ-процедуры.",
+  "skills": [
+    "./skills"
+  ],
+  "metadata": {
+    "openclaw": {
+      "category": "AI"
+    },
+    "platformRelease": "2026.09.11"
+  }
+}

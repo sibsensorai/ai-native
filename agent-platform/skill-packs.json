@@ -39,6 +39,16 @@
         "skill-director",
         "it-owner"
       ]
+    },
+    {
+      "name": "sibsensor-it",
+      "version": "0.1.0",
+      "displayName": "Сибсенсор — IT",
+      "category": "AI",
+      "description": "Навыки отдела IT компании «Сибсенсор»: диагностика сетевого принтера и другие ИТ-процедуры.",
+      "skills": [
+        "it-printer-diagnostika"
+      ]
     }
   ]
 }
