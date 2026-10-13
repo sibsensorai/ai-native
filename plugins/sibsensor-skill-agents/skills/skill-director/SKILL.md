@@ -27,12 +27,15 @@ description: "Главный агент управления скиллами к
    - есть `SKILL.md`, `skill.yaml`, блок `gateway-skill-telemetry:v1`;
    - нет паролей, токенов, ключей, персональных данных;
    - одно понятное действие, критерии качества выполнены.
-5. **Подать заявку ЧЕРЕЗ ЯДРО (без GitHub):** `gateway_approval_create` (`approval_type` = `skill_proposal`, `subject` = название навыка, `required_role` = `admin`, `four_eyes` = `false`; в `payload_json` — `skill_name`, `department`, `summary`, тексты `skill_md` и `skill_yaml`) + `gateway_notification_publish` владельцам (`recipients_json` = `[{"type":"user","key":"a.lukin@sibsensor.com"},{"type":"user","key":"i.shelemba@sibsensor.com"}]`).
-6. **СТОП — решение за владельцем** (Лукин / Шелемба). Автопроверку (CI) и публикацию одобренного навыка в репозиторий делает **куратор** отдельным шагом. Сотрудник к GitHub не прикасается.
+5. **Подать заявку ЧЕРЕЗ ЯДРО (без GitHub).** Два вида:
+   - **Отдельный навык:** `gateway_approval_create` с `approval_type` = `skill_publish`, `subject` = название навыка, `required_role` = `admin`, `four_eyes` = `false`; в `payload_json` — `skill_name`, `department`, `summary`, `skill_pack`, текст `skill_md` (+ при наличии `skill_yaml`).
+   - **Агент (набор навыков):** `approval_type` = `agent_publish`; в `payload_json` — `agent` = `{"slug","title","description","department"}` и массив `skills` = `[{"skill_name","skill_pack","department","summary","skill_md"}, …]` (каждый навык — самостоятельный и валидный, с блоком телеметрии).
+   В обоих случаях затем — `gateway_notification_publish` владельцам (`recipients_json` = `[{"type":"user","key":"a.lukin@sibsensor.com"},{"type":"user","key":"i.shelemba@sibsensor.com"}]`).
+6. **СТОП — решение за владельцем** (Лукин / Шелемба). После одобрения навык/агент **публикуется в ядро АВТОМАТИЧЕСКИ** и сразу доступен всем подключённым. Ничего пушить в GitHub не нужно.
 
 ## Где остановиться и отдать человеку
 
-- Публикация в общий набор — **только после одобрения**, и её делает куратор (у кого есть доступ к репозиторию). Агент сам не пушит и права не расширяет.
+- Публикация — **только после одобрения**; при одобрении навык/агент публикуется в ядро сам. Агент сам не публикует и права не расширяет.
 - Спорный отдел, конфликт навыков, удаление чужого навыка — решает человек.
 
 ## Результат
